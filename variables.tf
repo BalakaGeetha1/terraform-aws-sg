@@ -1,3 +1,4 @@
+
 variable "project_name" {
     type = string
 }
@@ -5,7 +6,7 @@ variable "project_name" {
 variable "environment" {
     type = string
 }
-
+#mandatory
 variable "sg_name" {
     type = string
 }
@@ -15,11 +16,12 @@ variable "sg_description" {
     default = ""
 }
 
+#mandatory
 variable "vpc_id" {
     type = string
 }
 
-
+#always optional
 variable "sg_tags" {
     type = map
     default = {}

@@ -3,7 +3,7 @@ resource "aws_security_group" "main" {
   description = var.sg_description
   vpc_id      = var.vpc_id
 
-
+  #egress is same for all[traffic generating from inside server], ingress is dynamic so not defining here
   egress {
     from_port        = 0
     to_port          = 0
